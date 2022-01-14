@@ -19,8 +19,8 @@ const server = http.createServer((req, res) => {
     })
   ts = Date.now()
   filePath = ts + '\\' + "f" + ts + ".txt";
-  fs.mkdirSync(ts + '');
-  fs.writeFile(filePath, "Server was able to create file and folder and put content");  
+  // fs.mkdirSync(ts + '');
+  // fs.writeFile(filePath, "Server was able to create file and folder and put content");  
 });
 
 server.listen(port, () => {
